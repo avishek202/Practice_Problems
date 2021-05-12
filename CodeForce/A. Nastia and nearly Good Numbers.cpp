@@ -1,3 +1,4 @@
+
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long int lli;
@@ -72,10 +73,29 @@ void solve()
   cin>>t;
   while(t--)
   {
-      lli num;
-      cin>>num;
-      lli ans =  -1+sqrt(1+4*2*num);
-      cout<<ans/2<<endl;
+      lli a,b;
+      cin>>a>>b;
+
+
+      if(b==1) cout<<"NO"<<endl;
+      else{
+        cout<<"YES"<<endl;
+
+        if(b==2)
+        {
+            lli n_max = a*b + a;
+            lli n_mid = a*b;
+            lli n_min = a;
+            cout<<n_min<<" "<<n_mid<<" "<<n_max<<endl;
+        }
+        else{
+
+         lli n_max = a*b;
+         lli n_mid = a*(b-1);
+         cout<<a<<" "<<n_mid<<" "<<n_max<<endl;
+        }
+
+      }
   }
 
 }

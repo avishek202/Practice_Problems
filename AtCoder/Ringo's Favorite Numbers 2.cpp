@@ -1,3 +1,5 @@
+
+
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long int lli;
@@ -70,13 +72,33 @@ void solve()
 
   lli t;
   cin>>t;
-  while(t--)
-  {
-      lli num;
-      cin>>num;
-      lli ans =  -1+sqrt(1+4*2*num);
-      cout<<ans/2<<endl;
+  lli a[t];
+  for(lli i=0;i<t;i++)
+    cin>>a[i];
+    lli c=0;
+  for(lli i=0;i<t-1;i++)
+  {   lli same=0;
+    if(a[i]!=0)
+    {
+      for(lli j =i+1;j<t;j++)
+      {
+          if(a[i]==a[j]){
+                a[j]=0;
+                same=1;
+
+          }
+          if(abs(a[i]-a[j])%200==0)
+             c++;
+      }
+      if(same==1)
+      {
+          c=c*2;
+          same=0;
+      }
   }
+
+}
+  cout<<c;
 
 }
 int main()
@@ -87,4 +109,3 @@ int main()
     solve();
     return 0;
 }
-

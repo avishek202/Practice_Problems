@@ -1,3 +1,4 @@
+
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long int lli;
@@ -70,13 +71,9 @@ void solve()
 
   lli t;
   cin>>t;
-  while(t--)
-  {
-      lli num;
-      cin>>num;
-      lli ans =  -1+sqrt(1+4*2*num);
-      cout<<ans/2<<endl;
-  }
+  if(t%100==0)cout<<t/100;
+  else cout<<(t/100)+1;
+
 
 }
 int main()

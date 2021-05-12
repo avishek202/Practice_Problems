@@ -1,3 +1,4 @@
+
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long int lli;
@@ -68,15 +69,7 @@ bool cmp(const pii &v1, const pii &v2)
 void solve()
 {
 
-  lli t;
-  cin>>t;
-  while(t--)
-  {
-      lli num;
-      cin>>num;
-      lli ans =  -1+sqrt(1+4*2*num);
-      cout<<ans/2<<endl;
-  }
+
 
 }
 int main()

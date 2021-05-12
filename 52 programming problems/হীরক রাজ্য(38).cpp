@@ -1,3 +1,4 @@
+
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long int lli;
@@ -65,6 +66,7 @@ bool cmp(const pii &v1, const pii &v2)
 {
     return (v1.second + v1.first*10)/v1.first < (v2.second + v2.first*10)/v2.first;
 }
+
 void solve()
 {
 
@@ -72,10 +74,19 @@ void solve()
   cin>>t;
   while(t--)
   {
-      lli num;
-      cin>>num;
-      lli ans =  -1+sqrt(1+4*2*num);
-      cout<<ans/2<<endl;
+      lli n,k,n1;
+      cin>>n>>k;
+      n1 = 2*n-1;
+      for(lli i=0;i<n;i++)
+      {
+          for(lli j=0;j<i+1;j++)
+          {
+              cout<<k;
+          }
+          cout<<endl;
+      }
+
+
   }
 
 }
@@ -87,4 +98,3 @@ int main()
     solve();
     return 0;
 }
-
