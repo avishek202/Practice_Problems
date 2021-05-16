@@ -20,7 +20,6 @@ typedef long long int lli;
 
 void solve()
 {
-
     int t;
     cin>>t;
     int c=0;
@@ -55,25 +54,6 @@ void solve()
 
 }
 
-void solve1()
-{
-
-    int t;
-    cin>>t;
-    while(t--)
-    {
-        string a;
-        cin>>a;
-        unordered_map <char,int>m;
-        for(int i=0; i<a.size(); i++)
-        {
-            m[a[i]]++;
-        }
-        for(auto it :  m)
-            cout<<it.first<<" "<<it.second<<endl;
-    }
-
-}
 int main()
 {
     ios_base::sync_with_stdio(false);
