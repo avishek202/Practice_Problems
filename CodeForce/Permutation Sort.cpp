@@ -2,11 +2,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long int lli;
-
-
 void solve()
 {
-
     int t;
     cin>>t;
     while(t--)
@@ -31,13 +28,11 @@ void solve()
                 cout<<0<<endl;
             else cout<<1<<endl;
         }
-
         else if(max==v[0]||min==v[n-1]) cout<<2<<endl;
         else if(min==v[0]||max == v[n-1]) cout<<1<<endl;
         else
         cout<<2<<endl;
     }
-
 }
 int main()
 {
